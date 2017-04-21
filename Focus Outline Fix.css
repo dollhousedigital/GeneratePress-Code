@@ -1,3 +1,9 @@
 *:focus {
 outline: 0;
 }
+
+*:focus {
+    outline: none;
+}
+
+outline-color:transparent;

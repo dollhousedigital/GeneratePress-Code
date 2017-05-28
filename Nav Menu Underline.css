@@ -1,0 +1,22 @@
+/*--NAV MENU UNDERLINE--*/
+
+.main-navigation .menu > .menu-item > a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 50%;
+    bottom: 15px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    color:#82c131;
+    display: block;
+    width: 0;
+    height: 3px;
+
+    background-color: currentColor;
+    transition: 0.5s width ease;
+}
+.main-navigation .menu > .menu-item.current-menu-item > a::after,
+.main-navigation .menu > .menu-item > a:hover::after {
+    width: 85%;
+}
